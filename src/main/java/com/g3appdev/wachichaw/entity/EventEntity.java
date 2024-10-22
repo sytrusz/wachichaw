@@ -43,7 +43,7 @@ public class EventEntity {
     private int maxCapacity;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "creator_id)")
+    @JoinColumn(name = "creator_id")
     @JsonIgnore
     private UserEntity user;
 
